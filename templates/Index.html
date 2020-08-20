@@ -1,0 +1,90 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" />
+ 
+
+</head>
+
+<body>
+ 
+</body>
+</html>
+
+<div>
+    <h1>Song Popularity Prediction</h1>
+
+    <form action="/predict" method="POST">
+        <div>
+            <p>Acousticness</p>
+            <input type="text" name = "Acousticness" id="Acousticness">
+        </div>
+
+        <div>
+            <p>Artist</p>
+            <input type="text" name = "Artist" id="Artist">
+        </div>
+
+        
+        <div>
+            <p>Danceability</p>
+            <input type="text" name = "Danceability" id="Danceability">
+        </div>
+
+        <div>
+            <p>Duration</p>
+            <input type="text" name = "Duration" id="Duration">
+        </div>
+
+        <div>
+            <p>Energy</p>
+            <input type="text" name = "Energy" id="Energy">
+        </div>
+
+        <div>
+            <p>Explicit</p>
+            <input type="text" name = "Explicit" id="Explicit">
+        </div>
+
+        <div>
+            <p>Instrumentalness</p>
+            <input type="text" name = "Instrumentalness" id="Instrumentalness">
+        </div>
+
+        <div>
+            <p>Liveness</p>
+            <input type="text" name = "Liveness" id="Liveness">
+        </div>
+
+        <div>
+            <p>Loudness</p>
+            <input type="text" name = "Loudness" id="Loudness">
+        </div>
+
+        <div>
+            <p>Speechiness</p>
+            <input type="text" name = "Speechiness" id="Speechiness">
+        </div>
+
+        <div>
+            <p>Tempo</p>
+            <input type="text" name = "Tempo" id="Tempo">
+        </div>
+
+        <div>
+            <p>TimeSignature</p>
+            <input type="text" name = "TimeSignature" id="TimeSignature">
+        </div>
+
+        <div>
+            <p>Valence</p>
+            <input type="text" name = "Valence" id="Valence">
+        </div>
+
+        <input type="submit" value="Predict">
+    </form>
+    
+    <h2>Predicted: {{pred}}</h2>
+</div>
