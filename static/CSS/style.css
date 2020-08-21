@@ -7,7 +7,7 @@ body {
 }
 
 input[type=text] {
-    border: 2px solid #E64C27;
+    border: 2px solid #dd16ab;
     border-radius: 4px;
     width: 30%;
     padding: 12px 20px;
@@ -15,7 +15,7 @@ input[type=text] {
  }
 
 input[type=button], input[type=submit], input[type=reset] {
-    background-color: #E64C27;
+    background-color: #dd16ab;
     border: none;
     color: white;
     padding: 16px 32px;

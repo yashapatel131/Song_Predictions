@@ -346,7 +346,7 @@ app = Flask(__name__)
 def load_model_to_app():
     app.predictor = load_model('./static/model/model.h5')
     
-
+    
 @app.route("/")
 def index():
     return render_template('index.html', pred = 0)

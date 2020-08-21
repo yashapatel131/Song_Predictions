@@ -1,22 +1,24 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" />
- 
+
 
 </head>
 
 <body>
- 
+
 </body>
 </html>
 
 <div>
-    <h1>Song Popularity Prediction</h1>
+    <h1> 🎵 Song Popularity Prediction 🎵 </h1>
+    <img src="{{url_for('static', filename='popstars.png')}}" style='float:right'/>
 
-    <form action="/predict" method="POST">
+        <form action="/predict" method="POST">
         <div>
             <p>Acousticness</p>
             <input type="text" name = "Acousticness" id="Acousticness">
